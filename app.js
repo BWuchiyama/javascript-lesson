@@ -1,13 +1,17 @@
+{1}
 let text = '私のニックネームは内山です。年齢は20歳です。'
 console.log(text);
 
+{2}
 const languages = ["JavaScript", "PHP", "Ruby", "Python", "Go"];
+
 
 const like = languages[0];
 const next = languages[3];
 
 console.log(`私の好きな言語は${like}です。次は${next}を勉強してみたいです。`);
 
+{3.7}
 let user = {
   name: 'John',
   age: 26,
@@ -26,6 +30,7 @@ console.log("Hello!")
 
 user.sayHello();
 
+{4.5}
 let playerList = [
   {
     _name: 'John',
@@ -63,6 +68,7 @@ console.log("Hello");
 }
 sayHello();
 
+{6}
 let sayWorld = function(){
   console.log("World");
 }
@@ -71,6 +77,7 @@ sayWorld();
 
 let calc = {};
 
+{8}
 calc.add = function (x, y) {
 console.log(x+y);
 };
@@ -92,6 +99,8 @@ calc.subtract(14,4);
 calc.multiply(7,7);
 calc.divide(25,5);
 
+{9}
+
 function remainder(x, y) {
 return x % y;
 }
@@ -102,9 +111,10 @@ console.log("5は3で割った余りは " + result + "です。");
 
 
 
-
+{1}
 console.log(Math.floor(Math.random() * 10));
 
+{2.1}
 setTimeout(function() {
 console.log("Hello World!");
 }, 3000);
@@ -113,10 +123,12 @@ function printName(firstName, formatter) {
   console.log(formatter(firstName));
 }
 
+{2.2}
 const addIntro = (name) => '私の名前は' + name + 'です。';
 
 printName("内山", addIntro);
 
+{3}
 let num = 0;
 
 if (num > 0) {
@@ -127,6 +139,7 @@ if (num > 0) {
   console.log("num is 0")
 }
 
+{4}
 let numbers = [];
 
 for (let i = 0; i < 100; i++) {
@@ -135,20 +148,24 @@ for (let i = 0; i < 100; i++) {
 
 console.log(numbers);
 
+{5}
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (let i = 0; i < mixed.length; i++) {
   const item = mixed[i];
 
   if (typeof item === "number") {
-    if (item % 2 === 0) {
+   console.log("even");
+    } else if(item % 2===0) {
       console.log("even");
-    } else {
+    } else{
       console.log("odd");
     }
-  } else {
-    console.log("not number");
-  }
+  
+    
+
 }
+
+{10}
 
 fooの関数スコープ何ではないと参照できないため外からxを参照できずにエラーになる
